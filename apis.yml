@@ -1,8 +1,12 @@
 aid: 1047-games
 name: 1047 Games
-description: '1047 Games is a company surfaced as a portfolio company of insight-partners, lightspeed-venture-partners
-  and added to the API Evangelist network as a stub for enrichment. Sector: consumer. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: '1047 Games is an independent video game studio best known for the arena
+  shooter Splitgate and its follow-up title EMPULSE, a free-to-play movement shooter.
+  Backed by Insight Partners and Lightspeed Venture Partners, the studio ships games
+  across PC (Steam), PlayStation, and Xbox. As a consumer game publisher it exposes
+  no public developer API; this profile tracks its public web, legal, and community
+  surfaces for the API Evangelist network. Added originally as a VC-portfolio lead
+  and enriched with live domain-security and identity probes.'
 url: https://raw.githubusercontent.com/api-evangelist/1047-games/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +15,28 @@ x-backed-by:
 - lightspeed-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
 modified: '2026-07-17'
+image: https://play-assets.immutable.com/87a0520b-49ea-4284-b614-1dafda42b0fc/game-page/1047_studios.webp
 tags:
 - Company
 - Consumer
+- Video Games
+- Game Studio
+- Gaming
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/1047-games-domain-security.yml
 - type: Website
   url: https://www.splitgate.com/
+- type: PrivacyPolicy
+  url: https://legal.1047games.com/privacy
+- type: TermsOfService
+  url: https://legal.1047games.com/eula
+- type: Support
+  url: https://discord.com/invite/empulse
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
